@@ -1,0 +1,64 @@
+<div class="card py-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2 class="text-center fw-bolder mb-4">User Signup</h2>
+            <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" novalidate>
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control"
+                        [ngClass]="signupForm.controls.name.touched && signupForm.controls.name.errors?.required || signupForm.controls.name.errors?.minlength ? 'is-invalid' : ''"
+                        formControlName="name" placeholder="Enter Your Name">
+                    <small class="form-text text-danger"
+                        *ngIf="signupForm.controls.name.touched && signupForm.controls.name.errors?.required">
+                        Introduzca su Nombre.
+                    </small>
+                    <small class="form-text text-danger" *ngIf="signupForm.controls.name.errors?.minlength">
+                        YSu nombre debe tener almenos 3 caracteres.
+                    </small>
+                </div>
+                <div class="form-group mb-3">
+                    <input type="email" class="form-control"
+                        [ngClass]="signupForm.controls.email.touched && signupForm.controls.email.errors?.required || signupForm.controls.email.errors?.email ? 'is-invalid' : ''"
+                        formControlName="email" placeholder="Enter Your Email">
+                    <small class="form-text text-danger"
+                        *ngIf="signupForm.controls.email.touched && signupForm.controls.email.errors?.required">
+                        Introduzca su Email.
+                    </small>
+                    <small class="form-text text-danger" *ngIf="signupForm.controls.email.errors?.email">
+                        Por favor introduzca un email valido.
+                    </small>
+                </div>
+                <div class="form-group mb-3">
+                    <input type="text" class="form-control" [ngClass]="signupForm.controls.phone.touched && signupForm.controls.phone.errors?.required
+                         || signupForm.controls.phone.errors?.minlength || signupForm.controls.phone.errors?.maxlength ? 'is-invalid' : ''" formControlName="phone"
+                        placeholder="Enter Your Phone Number">
+                    <small class="form-text text-danger"
+                        *ngIf="signupForm.controls.phone.touched && signupForm.controls.phone.errors?.required">
+                        Introduzca su numero de teléfono.
+                    </small>
+                    <small class="form-text text-danger" *ngIf="signupForm.controls.phone.errors?.minlength">
+                        Su teléfono debe tener 10 digitos.
+                    </small>
+                    <small class="form-text text-danger" *ngIf="signupForm.controls.phone.errors?.maxlength">
+                        Su teléfono debe tener 10 digitos.
+                    </small>
+                </div>
+                <div class="form-group mb-3">
+                    <input type="password" class="form-control" [ngClass]="signupForm.controls.password.touched && signupForm.controls.password.errors?.required 
+                        || signupForm.controls.password.errors?.minlength ? 'is-invalid' : ''"
+                        formControlName="password" placeholder="Password">
+                    <small class="form-text text-danger"
+                        *ngIf="signupForm.controls.password.touched && signupForm.controls.password.errors?.required">
+                        Introduzca su Password.
+                    </small>
+                    <small class="form-text text-danger" *ngIf="signupForm.controls.password.errors?.minlength">
+                        Su password de tener 8 Caracteres.
+                    </small>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary w-100" [disabled]="!signupForm.valid">Submit</button>
+                </div>
+            </form>
+            <div class="text-center mt-4">Ya tiene una Cuenta? <a routerLink="/login">Log In</a></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,117 @@
+{
+  "todo": [
+    {
+      "userId": 6,
+      "id": 3,
+      "task": "Sample Task Three.dcdddcdcdc",
+      "status": false
+    },
+    {
+      "userId": 2,
+      "id": 6,
+      "task": "Sample Task Six",
+      "status": false
+    },
+    {
+      "userId": 2,
+      "id": 7,
+      "task": "Sample Task Seven",
+      "status": true
+    },
+    {
+      "userId": 6,
+      "id": 9,
+      "task": "Sample Task Nine",
+      "status": false
+    },
+    {
+      "userId": 2,
+      "id": 10,
+      "task": "Sample Task Ten",
+      "status": false
+    },
+    {
+      "userId": 6,
+      "id": 11,
+      "task": "Sample Task Eleven",
+      "status": false
+    },
+    {
+      "userId": 6,
+      "id": 12,
+      "task": "Sample Task Two",
+      "status": false
+    },
+    {
+      "userId": 6,
+      "task": "Sample Task Two",
+      "status": false,
+      "id": 16
+    },
+    {
+      "userId": 6,
+      "id": 19,
+      "task": "Sample Task Five",
+      "status": false
+    },
+    {
+      "userId": 6,
+      "id": 20,
+      "task": "moi moi moi",
+      "status": false
+    },
+    {
+      "userId": 6,
+      "id": 21,
+      "task": "tgrtgrtgrtgt rtgrtgtrgtrgtrgtgrtg",
+      "status": true
+    },
+    {
+      "userId": 6,
+      "id": 22,
+      "task": "rtggttgr44444444444",
+      "status": true
+    },
+    {
+      "userId": 6,
+      "id": 23,
+      "task": "344343434343434343grggtgtggt",
+      "status": false
+    },
+    {
+      "userId": 6,
+      "id": 24,
+      "task": "34r55trrrr   ffrrrr3r4r43r34r343r3r4r34r34r4",
+      "status": false
+    },
+    {
+      "userId": 6,
+      "task": "dcdcdddcdcdddcdc",
+      "status": false,
+      "id": 25
+    }
+  ],
+  "user": [
+    {
+      "name": "PRUEBA TODO LIST",
+      "email": "ramos.moises@gmail.com",
+      "phone": "4627605566",
+      "password": "12345678",
+      "id": 6
+    },
+    {
+      "name": "MOISES RAMOS",
+      "email": "moisesiberico@gmail.com",
+      "phone": "4627605566",
+      "password": "12345678",
+      "id": 6
+    },
+    {
+      "name": "MOISES RAMOS",
+      "email": "moisesramos@harmony365.es",
+      "phone": "3627605566",
+      "password": "12345678",
+      "id": 7
+    }
+  ]
+}
